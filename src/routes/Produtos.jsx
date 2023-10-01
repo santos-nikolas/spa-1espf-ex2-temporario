@@ -30,7 +30,7 @@ export default function Produtos() {
               <td>{item.desc}</td>
               <td>{item.preco}</td>
               <td><Link to={`/editar/produtos/${item.id}`}> <Editar/> </Link> </td>
-              <td><Link to={`/excluir/produto/${item.id}`}>X</Link> </td>
+              <td><Link to={`/excluir/produtos/${item.id}`}>X</Link> </td>
             </tr>
           ))}
         </tbody>
