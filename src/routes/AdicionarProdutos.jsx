@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom'
 import { ListaProduto } from '../components/ListaProdutos';
 // import { useHistory } from 'react-router-dom';
 
 export default function AdicionarProdutos(){
-    function AdicionarProdutoTabela({ produto }) {
-        return (
-          <tr>
-            <td>{produto.id}</td>
-            <td>{produto.nome}</td>
-            <td>{produto.desc}</td>
-            <td>{produto.preco}</td>
-          </tr>
-        );
-      }
+    const {id} = useParams();
+
+    document.title = "Adicionar Produtos " + id;
+
+    //Criar uma estratégia para recuperar o produto na lista
+    // Utilizando o id
+    // const produtoRecuperadoPorId = ListaProduto.filter(item => item.id == parseInt(id));
+    const produtoRecuperadoPorId = ListaProduto.filter(item => item.id == parseInt(id))[0];
 
 
   return (
@@ -27,8 +26,6 @@ export default function AdicionarProdutos(){
               <input
                 type="text"
                 name="nome"
-                value={novoProduto.nome}
-                onChange={handleInputChange}
                 placeholder="Digite o nome do Produto."
               />
             </div>
@@ -37,8 +34,6 @@ export default function AdicionarProdutos(){
               <input
                 type="text"
                 name="desc"
-                value={novoProduto.desc}
-                onChange={handleInputChange}
                 placeholder="Digite a descrição do Produto."
               />
             </div>
@@ -47,13 +42,11 @@ export default function AdicionarProdutos(){
               <input
                 type="number"
                 name="preco"
-                value={novoProduto.preco}
-                onChange={handleInputChange}
                 placeholder="Digite o preço do Produto."
               />
             </div>
             <div>
-              <button type="button" onClick={handleAdicionar}>
+              <button type="button">
                 ADICIONAR
               </button>
             </div>
