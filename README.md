@@ -1,8 +1,7 @@
-# React + Vite
+# Membros - TPGN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pedro Henrique Pedrosa Tavares - RM97877 <br>
+Thiago Jardim de Oliveira - RM551624 <br>
+Guilherme Rocha Bianchini - RM97974 <br>
+Nikolas Rodrigues Moura dos Santos - RM551566 <br>
+Rodrigo Brasileir - RM98952 <br>
