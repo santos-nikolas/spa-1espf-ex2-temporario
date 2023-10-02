@@ -71,7 +71,7 @@ export default function Produtos() {
 
         <tfoot>
           <tr>
-            <td>
+            <td colSpan={6}>
                 <Link to={`/adicionar/produtos`}>
                   Adicionar Produto <Adicionar />
                 </Link>
