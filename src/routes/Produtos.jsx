@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import style from './Produtos.module.css';
 import { AiTwotoneEdit as Editar } from 'react-icons/ai';
+import {CgAddR as Adicionar} from 'react-icons/cg';
 
 export default function Produtos() {
   const [produtos, setProdutos] = useState([]);
@@ -69,6 +70,13 @@ export default function Produtos() {
         </tbody>
 
         <tfoot>
+          <tr>
+            <td>
+                <Link to={`/adicionar/produtos`}>
+                  Adicionar Produto <Adicionar />
+                </Link>
+            </td>
+          </tr>
           <tr>
             <td colSpan={6}>PRODUTOS INFORMÁTICOS - QTD = {produtos.length}</td>
           </tr>
